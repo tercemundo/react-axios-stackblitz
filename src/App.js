@@ -20,15 +20,18 @@ function App() {
   }, []);
 
   return (
+    <table > <tr><th>TituLo</th> </tr>
+
     <div>
       {products.map((product) => (
         <>
-        <p>{product.title}</p>
-        <p>{product.body}</p>
+        <tr><td>{product.title}</td>
+        <td>{product.body}</td></tr>
         </>
         
       ))}
     </div>
+    </table>
   );
 }
 
