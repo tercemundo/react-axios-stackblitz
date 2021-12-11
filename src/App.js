@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import Axios from "axios";
 import "./style.css"
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 
 function App() {
@@ -20,9 +22,12 @@ function App() {
   }, []);
 
   return (
-    <table > <tr><th>TituLo</th> </tr>
+    <table class="table table-sm mt-3">
+      
+      <tr><th>TituLo</th>
+      </tr>
 
-    <div>
+      <div className="container-fluid p-3">
       {products.map((product) => (
         <>
         <tr><td>{product.title}</td>
